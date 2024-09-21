@@ -11,3 +11,4 @@ class HomePage(ListView):
     template_name = 'SportsGrounds/index.html'
     title_page = 'Главная страница'
     context_object_name = 'categories'
+

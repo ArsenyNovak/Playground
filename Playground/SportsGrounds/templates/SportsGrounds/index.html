@@ -14,10 +14,9 @@
 		<div class="wrapper">
 			<nav class="header__navigation">
 			<ul class="navigation">
-				<li>Все площадки</li>
-				<li>О сайте</li>
-				<li>Обратная связь</li>
-				<li>Добавить площадку</li>
+				{% for n in navigation %}
+				<li><a href="{% url n.url_name %}">{{n.name}}</a></li>
+				{% endfor %}
 			</ul>
 			</nav>
 		</div>
