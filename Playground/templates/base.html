@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная страница</title>
+	<link type="text/css" href="{% static 'SportsGrounds/css/styles.css' %}" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="{% static 'SportsGrounds/images/logo.png' %}" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<nav class="header__navigation">
+			<ul class="navigation">
+				{% for n in navigation %}
+				<li><a href="{% url n.url_name %}">{{n.name}}</a></li>
+				{% endfor %}
+			</ul>
+			</nav>
+		</div>
+	</header>
+    <section class="categories">
+        <div class="layout-column">
+         {% block content %}
+         {% endblock %}
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+
+        </div>
+    </footer>
+</body>
+</html>

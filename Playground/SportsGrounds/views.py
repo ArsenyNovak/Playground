@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 
 from . models import Category
 
@@ -12,3 +12,6 @@ class HomePage(ListView):
     title_page = 'Главная страница'
     context_object_name = 'categories'
 
+class About(TemplateView):
+    template_name = 'SportsGrounds/about.html'
+    title_page = 'О сайте'

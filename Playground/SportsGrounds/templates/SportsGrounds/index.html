@@ -1,35 +1,10 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Главная страница</title>
-	<link type="text/css" href="{% static 'SportsGrounds/css/styles.css' %}" rel="stylesheet" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="shortcut icon" href="{% static 'SportsGrounds/images/logo.png' %}" type="image/x-icon"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header class="header">
-		<div class="wrapper">
-			<nav class="header__navigation">
-			<ul class="navigation">
-				{% for n in navigation %}
-				<li><a href="{% url n.url_name %}">{{n.name}}</a></li>
-				{% endfor %}
-			</ul>
-			</nav>
-		</div>
-	</header>
-    <section class="categories">
-        <div class="layout-column">
-            {% for item in categories %}
-			    <div class="categories-item">
-					<img class="categories-item-images" src="{{ item.image.url }}">
-					<h3 class="categories-item-name">{{ item.name }}</h3>
-				</div>
-			{% endfor %}
-        </div>
-    </section>
-</body>
-</html>
+{% block content %}
+{% for item in categories %}
+	<div class="categories-item">
+		<img class="categories-item-images" src="{{ item.image.url }}">
+		<h3 class="categories-item-name">{{ item.name }}</h3>
+	</div>
+{% endfor %}
+{% endblock %}
