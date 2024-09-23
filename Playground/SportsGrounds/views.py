@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import ListView, TemplateView
+from django.views.generic import ListView, TemplateView, DetailView
 
-from . models import Category
+from . models import Category, Playground
 
 
 # Create your views here.
@@ -9,9 +9,26 @@ from . models import Category
 class HomePage(ListView):
     model = Category
     template_name = 'SportsGrounds/index.html'
-    title_page = 'Главная страница'
+    extra_context = {'title': 'Главная страница'}
     context_object_name = 'categories'
+
 
 class About(TemplateView):
     template_name = 'SportsGrounds/about.html'
     title_page = 'О сайте'
+    extra_context = {'title': 'О сайте'}
+
+
+class ShowCategory(ListView):
+    model = Playground
+    template_name = 'SportsGrounds/show_category.html'
+    context_object_name = 'playgrounds'
+    #allow_empty = False
+
+    def get_queryset(self):
+        return Playground.objects.filter(cat__slug=self.kwargs['cat_slug'])
+
+
+class ShowSportGround(DetailView):
+    model = Playground
+    template_name = 'SportsGrounds/show_SportsGrounds.html'

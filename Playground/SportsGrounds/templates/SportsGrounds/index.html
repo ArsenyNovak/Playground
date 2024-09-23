@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="layout-column">
 {% for item in categories %}
 	<div class="categories-item">
-		<img class="categories-item-images" src="{{ item.image.url }}">
-		<h3 class="categories-item-name">{{ item.name }}</h3>
+		<a href="{{item.get_absolute_url}}">
+			<img class="categories-item-images" src="{{ item.image.url }}">
+			<h3 class="categories-item-name">{{ item.name }}</h3>
+		</a>
 	</div>
 {% endfor %}
+</div>
 {% endblock %}

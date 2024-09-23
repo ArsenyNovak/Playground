@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Главная страница</title>
+	<title>{{title}}</title>
 	<link type="text/css" href="{% static 'SportsGrounds/css/styles.css' %}" rel="stylesheet" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="shortcut icon" href="{% static 'SportsGrounds/images/logo.png' %}" type="image/x-icon"/>
@@ -22,10 +22,8 @@
 		</div>
 	</header>
     <section class="categories">
-        <div class="layout-column">
-         {% block content %}
-         {% endblock %}
-        </div>
+	 {% block content %}
+	 {% endblock %}
     </section>
     <footer class="footer">
         <div class="wrapper">

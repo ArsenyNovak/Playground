@@ -10,10 +10,13 @@ class Playground(models.Model):
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     cat = models.ManyToManyField('Category', related_name='cat')
-    photo = models.ManyToManyField('Photo', related_name='Photo')
+    photo = models.ManyToManyField('Photo', blank=True, related_name='Photo')
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+       return reverse('sport_ground', kwargs={'sportground_slug': self.slug})
 
 class Category(models.Model):
     name = models.CharField(max_length=50, db_index=True)

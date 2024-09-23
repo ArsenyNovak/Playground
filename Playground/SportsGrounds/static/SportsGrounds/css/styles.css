@@ -9,6 +9,14 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -55,7 +63,7 @@ ul {
   justify-content: flex-center;
   background-color: #808080;
   padding: 10px 5px;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .categories-item-images {
@@ -71,4 +79,33 @@ ul {
 
 }
 
+/* classes use in about.html template */
+.about_page_text{
+  background-color: #808080;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+/* classes use in show_category.html template */
+.wrapper-section {
+  padding: 100px;
+}
+
+.playground-item{
+  background-color: #808080;
+  margin: 80px;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+.name-date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-playground{
+  display: flex;
+  justify-content: flex-end
+}
 
