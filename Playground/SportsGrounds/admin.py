@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from SportsGrounds.models import Category, Playground
+from SportsGrounds.models import Category, Playground,Photo
 
 
 # Register your models here.
@@ -13,3 +13,8 @@ class CategoryAdmin(admin.ModelAdmin):
 class PlaygroundAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug', 'description')
     list_display_links = ('id', 'name')
+
+@admin.register(Photo)
+class Photo(admin.ModelAdmin):
+    list_display = ('id', 'image')
+    list_display_links = ('id', 'image')
