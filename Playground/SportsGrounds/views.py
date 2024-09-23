@@ -32,3 +32,5 @@ class ShowCategory(ListView):
 class ShowSportGround(DetailView):
     model = Playground
     template_name = 'SportsGrounds/show_SportsGrounds.html'
+    context_object_name = 'playground'
+    slug_url_kwarg = 'sportground_slug'

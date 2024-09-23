@@ -2,21 +2,13 @@
 
 {% block content %}
 <div class="wrapper-section">
-
-<ul>
-	{% for p in playgrounds %}
-    <li class="playground-item"><div class="name-date">
-            <h3>{{p.name}}</h3>
-            <p>дата последнего редактирования: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
-        </div>
+    <div class="playground-item">
+      <h1>{{ playground.name }}</h1>
         <!-- <p><img class="img-article-left thumb" src="{{p.photo.url}}"></p>-->
+        {{playground.description|linebreaks}}
         <hr>
-        {{p.description|linebreaks|truncatewords:40}}
-        <hr>
-        <p class="description-playground"><a href="{{ p.get_absolute_url }}">посмотреть полностью</a></p>
-    </li>
-	{% endfor %}
-</ul>
+        <p class="description-playground">дата последнего редактирования: {{playground.time_update|date:"d-m-Y H:i:s"}}</p>
+    </div>
 </div>
 
 {% endblock %}
