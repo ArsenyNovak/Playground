@@ -1,5 +1,19 @@
 
 /* base.html*/
+h3 {
+  text-align: center;
+  margin: 10px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+}
 
 .wrapper {
   display: flex;
@@ -12,21 +26,45 @@
   column-gap: 100px;
 }
 
+/* show_SportsGround.html*/
+
+.wrapper-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/background.jpg');
+  background-size: cover;
+  min-height: 700px;
+}
+
+.card {
+  background-color: rgba(43, 48, 53, 1);
+}
+
+.image-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-item {
+  max-height: 300px;
+  padding: 10px;
+}
 
 
+
+/* ON_ DELETE*/
 
 a {
   text-decoration: none;
   color: #000000;
 }
 
-h3 {
-  margin: 0;
-}
 
-p {
-  margin: 0;
-}
+
+
 
 ul {
   list-style: none;

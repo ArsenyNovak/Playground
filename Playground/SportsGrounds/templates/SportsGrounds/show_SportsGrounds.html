@@ -2,33 +2,38 @@
 
 {% block content %}
 <div class="wrapper-section">
-    <div class="playground-item">
-        <h1>{{ playground.name }}</h1>
-        <div id="carouselExample" class="carousel slide">
-             <div class="carousel-inner">
-                 {% for item_photo  in playground.photo.all  %}
-                 <div class="carousel-item-activ">
-                  <img src="{{ item_photo.image.url }}" class="d-block w-100" alt="...">
-                 </div>
-                 {% endfor %}
-             </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+<div class="card" style="width: 60%">
+    <div class="card-body">
+    <h3>{{ playground.name }}</h3>
+        <div class="image-group">
+            {% for item_photo  in playground.photo.all %}
+            <a href="{{ item_photo.image.url }}"><img src="{{ item_photo.image.url }}" class="image-item" alt="..."></a>
+            {% endfor %}
         </div>
-        {{playground.description|linebreaks}}
+
+        <p class="card-text"> {{playground.description|linebreaks}}</p>
         <hr>
         <p class="description-playground">дата последнего редактирования: {{playground.time_update|date:"d-m-Y H:i:s"}}</p>
     </div>
 </div>
-
+</div>
 {% endblock %}
-
-<!--<div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>-->
+<!--
+<div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        {% for item_photo  in playground.photo.all %}
+          <div class="carousel-item {% if forloop.first %} active {% endif %}">
+            <img src="{{ item_photo.image.url }}" class="d-block w-100 carousel-img " alt="...">
+          </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+     </div>
+-->
