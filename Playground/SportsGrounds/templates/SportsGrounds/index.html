@@ -3,12 +3,14 @@
 {% block content %}
 <div class="layout-column">
 {% for item in categories %}
-	<div class="categories-item">
+	<div class="card-categories" style="width: 20rem">
 		<a href="{{item.get_absolute_url}}">
 			<img class="categories-item-images" src="{{ item.image.url }}">
-			<h3 class="categories-item-name">{{ item.name }}</h3>
+			<h3>{{ item.name }}</h3>
 		</a>
 	</div>
 {% endfor %}
 </div>
 {% endblock %}
+
+

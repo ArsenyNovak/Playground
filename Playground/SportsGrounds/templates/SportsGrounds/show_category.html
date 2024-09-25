@@ -1,22 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="wrapper-section">
-
-<ul>
-	{% for p in playgrounds %}
-    <li class="playground-item"><div class="name-date">
-            <h3>{{p.name}}</h3>
-            <p>дата последнего редактирования: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
-        </div>
-        <!-- <p><img class="img-article-left thumb" src="{{p.photo.url}}"></p>-->
-        <hr>
-        {{p.description|linebreaks|truncatewords:40}}
-        <hr>
-        <p class="description-playground"><a href="{{ p.get_absolute_url }}">посмотреть полностью</a></p>
-    </li>
-	{% endfor %}
-</ul>
+<div class="list-playgrounds-category">
+    <h3 class="list-category-name">{{ cat }}</h3>
+    <ul>
+    {% for p in playgrounds %}
+        <li class="playground-item">
+            <div class="name-date">
+                <h4>{{p.name}}</h4>
+                <p>дата последнего редактирования: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+            </div>
+            <hr>
+            <img src="{{p.photo.url}}">
+            {{p.description|linebreaks|truncatewords:40}}
+            <hr>
+            <p class="description-playground"><a href="{{ p.get_absolute_url }}">посмотреть полностью</a></p>
+        </li>
+    {% endfor %}
+    </ul>
 </div>
-
 {% endblock %}
+
+<!-- <p><img class="img-article-left thumb" src="{{p.photo.url}}"></p>-->
