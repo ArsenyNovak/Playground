@@ -6,19 +6,26 @@
     <ul>
     {% for p in playgrounds %}
         <li class="playground-item">
-            <div class="name-date">
-                <h4>{{p.name}}</h4>
-                <p>дата последнего редактирования: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img src="{{p.photo.first.image.url}}" class="img-fluid rounded-start" alt="фото площадки">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h4 class="card-title">{{p.name}}</h4>
+                    <p class="card-text">{{p.description|linebreaks|truncatewords:40}}
+                        <a href="{{ p.get_absolute_url }}">посмотреть полностью</a>
+                    </p>
+                  </div>
+                </div>
+                  <p class="description-playground">дата последнего редактирования: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+              </div>
             </div>
-            <hr>
-            <img src="{{p.photo.url}}">
-            {{p.description|linebreaks|truncatewords:40}}
-            <hr>
-            <p class="description-playground"><a href="{{ p.get_absolute_url }}">посмотреть полностью</a></p>
+
         </li>
     {% endfor %}
     </ul>
 </div>
 {% endblock %}
 
-<!-- <p><img class="img-article-left thumb" src="{{p.photo.url}}"></p>-->

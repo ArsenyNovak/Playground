@@ -124,13 +124,11 @@ ul {
   border-radius: 20px;
 }
 
-.name-date{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .description-playground{
   display: flex;
   justify-content: flex-end
+}
+
+.card-title {
+  color: rgba(255, 255, 255, 0.55);
 }
