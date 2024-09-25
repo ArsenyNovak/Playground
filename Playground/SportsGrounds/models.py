@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import PROTECT
 from django.urls import reverse
 
 
@@ -10,7 +11,7 @@ class Playground(models.Model):
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     cat = models.ManyToManyField('Category', related_name='cat')
-    photo = models.ManyToManyField('Photo', blank=True, related_name='Photo')
+
 
     def __str__(self):
         return self.name
@@ -30,6 +31,8 @@ class Category(models.Model):
     def get_absolute_url(self):
         return reverse('category', kwargs={'cat_slug': self.slug})
 
+
 class Photo(models.Model):
+    playground = models.ForeignKey(Playground, on_delete=PROTECT, related_name="playground")
     image = models.ImageField(upload_to='playground_photos/', default=None,
-                             null=True, verbose_name='Фотография')
+                              null=True, verbose_name='Фотография')
