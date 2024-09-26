@@ -9,8 +9,8 @@ class Playground(models.Model):
     description = models.TextField(verbose_name= 'Описание')
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
-    cat = models.ManyToManyField('Category', related_name='cat')
-    photo = models.ManyToManyField('Photo', blank=True, related_name='Photo')
+    cat = models.ManyToManyField('Category', related_name='cat', verbose_name= 'Площадки')
+    photo = models.ManyToManyField('Photo', blank=True, related_name='Photo', verbose_name= 'Фото')
 
     def __str__(self):
         return self.name
@@ -33,3 +33,6 @@ class Category(models.Model):
 class Photo(models.Model):
     image = models.ImageField(upload_to='playground_photos/', default=None,
                              null=True, verbose_name='Фотография')
+
+    def __str__(self):
+        return self.image.url.split('/')[-1]

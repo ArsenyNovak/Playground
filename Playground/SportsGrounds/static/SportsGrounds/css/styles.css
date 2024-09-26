@@ -65,11 +65,11 @@ ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .image-item {
-  max-height: 300px;
+  max-height: 200px;
   padding: 10px;
 }
 
