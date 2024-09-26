@@ -21,6 +21,7 @@ hr {
 p {
   margin: 0;
   color: rgba(255, 255, 255, 0.55);
+  text-align: justify;
 }
 
 ul {
@@ -78,7 +79,7 @@ ul {
 .layout-column {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 50px;
 }
 

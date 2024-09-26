@@ -39,3 +39,10 @@ class ShowSportGround(DetailView):
     template_name = 'SportsGrounds/show_SportsGrounds.html'
     context_object_name = 'playground'
     slug_url_kwarg = 'sportground_slug'
+
+class AllPlayGrounds(ListView):
+    model = Playground
+    template_name = 'SportsGrounds/show_category.html'
+    context_object_name = 'playgrounds'
+    allow_empty = False
+
