@@ -1,5 +1,9 @@
 
 /* base.html*/
+body {
+  color: rgba(255, 255, 255, 0.55);
+}
+
 a {
   text-decoration: none;
 }
@@ -101,6 +105,18 @@ ul {
   padding: 20px;
 }
 
+/* classes use in add_sportground.html template */
+.card-add{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(43, 48, 53, 1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form-label{
+  padding: 0px 20px 20px 0px;
+}
 
 /* ON_ DELETE*/
 /* classes use in show_category.html template */

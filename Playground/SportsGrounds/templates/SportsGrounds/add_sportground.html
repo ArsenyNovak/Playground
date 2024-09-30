@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<form action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="show-sportground-section">
+    <div class="card-add" >
+      <div class="form-error">{{ form.non_field_errors }}</div>
+      {% for f in form %}
+      <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>{{ f }}</p>
+      <div class="form-error">{{ f.errors }}</div>
+      {% endfor %}
+      <p><button type="submit">Добавить площадку</button></p>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
+<!--<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>-->
