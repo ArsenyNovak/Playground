@@ -1,3 +1,5 @@
+import os
+
 from django.db import models
 from django.urls import reverse
 from pytils.translit import slugify
@@ -36,6 +38,7 @@ class Playground(models.Model):
         self.slug = slugify(self.name)
         return super(Playground, self).save(*args, **kwargs)
 
+
 class Category(models.Model):
     name = models.CharField(max_length=50, db_index=True)
     slug = models.SlugField(max_length=50, unique=True, db_index=True, verbose_name= 'слаг')
@@ -53,9 +56,14 @@ class Category(models.Model):
     def get_absolute_url(self):
         return reverse('category', kwargs={'cat_slug': self.slug})
 
+
+def get_upload_to(instance, filename):
+    return os.path.join('playground_photos', instance.playground.slug, filename)
+
+
 class Photo(models.Model):
     playground = models.ForeignKey('Playground', on_delete=models.CASCADE, related_name='photo')
-    image = models.ImageField(upload_to='playground_photos/', default=None,
+    image = models.ImageField(upload_to=get_upload_to, default=None,
                              null=True, verbose_name='Фотография')
     time_create = models.DateTimeField(auto_now_add=True, null=True)
 
@@ -63,3 +71,6 @@ class Photo(models.Model):
         verbose_name = 'Фотография'
         verbose_name_plural = 'Фотографии'
 
+
+    def __str__(self):
+        return self.image.url.split('/')[-1]

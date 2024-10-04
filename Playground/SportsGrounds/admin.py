@@ -12,11 +12,10 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Playground)
 class PlaygroundAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'name', 'slug', 'description', 'time_update')
     list_display_links = ('id', 'name')
     prepopulated_fields = {'slug': ('name',)}
 
 @admin.register(Photo)
 class Photo(admin.ModelAdmin):
-    list_display = ('id', 'image')
-    list_display_links = ('id', 'image')
+    list_display = ('id', 'image', 'playground', 'time_create')
