@@ -57,7 +57,7 @@ class Photo(models.Model):
     playground = models.ForeignKey('Playground', on_delete=models.CASCADE, related_name='photo')
     image = models.ImageField(upload_to='playground_photos/', default=None,
                              null=True, verbose_name='Фотография')
-    time_create = models.DateTimeField(auto_now_add=True)
+    time_create = models.DateTimeField(auto_now_add=True, null=True)
 
     class Meta:
         verbose_name = 'Фотография'
