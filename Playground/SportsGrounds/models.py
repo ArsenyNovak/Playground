@@ -5,13 +5,21 @@ from pytils.translit import slugify
 
 # Create your models here.
 class Playground(models.Model):
+
+    class Status(models.IntegerChoices):
+        DRAFT = 0, 'Черновик'
+        PUBLISHED = 1, 'Опубликовано'
+
+
     name = models.CharField(max_length=50, verbose_name= 'Название')
     slug = models.SlugField(max_length=50, unique=True, db_index=True, verbose_name= 'слаг')
     description = models.TextField(verbose_name= 'Описание')
+    is_published = models.BooleanField(choices=tuple(map(lambda x: (bool(x[0]), x[1]), Status.choices)),
+                                       default=Status.DRAFT)
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     cat = models.ManyToManyField('Category', related_name='cat', verbose_name= 'Площадки')
-    photo = models.ManyToManyField('Photo', blank=True, related_name='Photo', verbose_name= 'Фото')
+
 
     class Meta:
         verbose_name = 'Спортивная площадка'
@@ -46,12 +54,12 @@ class Category(models.Model):
         return reverse('category', kwargs={'cat_slug': self.slug})
 
 class Photo(models.Model):
+    playground = models.ForeignKey('Playground', on_delete=models.CASCADE, related_name='photo')
     image = models.ImageField(upload_to='playground_photos/', default=None,
                              null=True, verbose_name='Фотография')
+    time_create = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name = 'Фотография'
         verbose_name_plural = 'Фотографии'
 
-    def __str__(self):
-        return self.image.url.split('/')[-1]

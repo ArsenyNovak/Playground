@@ -2,7 +2,7 @@ from audioop import reverse
 
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, DetailView, FormView
+from django.views.generic import ListView, TemplateView, DetailView, FormView, UpdateView
 
 from .forms import AddPlayGroundForm
 from .models import Category, Playground, Photo
@@ -31,7 +31,7 @@ class ShowCategory(ListView):
 
 
     def get_queryset(self):
-        return Playground.objects.filter(cat__slug=self.kwargs['cat_slug'])
+        return Playground.objects.filter(cat__slug=self.kwargs['cat_slug'], is_published=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -45,13 +45,16 @@ class ShowSportGround(DetailView):
     template_name = 'SportsGrounds/show_SportsGrounds.html'
     context_object_name = 'playground'
     slug_url_kwarg = 'sportground_slug'
-    paginate_by = 5
+
 
 class AllPlayGrounds(ListView):
-    model = Playground
+
     template_name = 'SportsGrounds/show_category.html'
     context_object_name = 'playgrounds'
     allow_empty = False
+
+    def get_queryset(self):
+        return Playground.objects.filter(is_published=True)
 
 
 
@@ -63,16 +66,13 @@ class AddPlayGrounds(FormView):
     def form_valid(self, form):
         print(form.cleaned_data)
         files = form.cleaned_data["photo_all"]
-        photo_list = []
-        for f in files:
-            fp = Photo(image=f)
-            fp.save()
-            photo_list.append(fp.pk)
         pg = Playground(name=form.cleaned_data["name"],
                         description=form.cleaned_data["description"],
         )
         pg.save()
-        pg.photo.add(*photo_list)
+        for f in files:
+            fp = Photo(image=f, playground=pg)
+            fp.save()
         pg.cat.add(*form.cleaned_data["cat"])
         pg.save()
         return super().form_valid(form)
