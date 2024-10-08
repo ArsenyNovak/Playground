@@ -6,6 +6,7 @@ body {
 
 a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 h3 {
@@ -116,6 +117,24 @@ ul {
 
 .form-label{
   padding: 0px 20px 20px 0px;
+}
+
+.login-button{
+  text-align: center;
+}
+
+.color-error{
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.login-logout{
+  display: flex;
+  align-items: center;
+}
+
+.login-logout-form{
+  display: flex;
+  align-items: center;
 }
 
 /* ON_ DELETE*/

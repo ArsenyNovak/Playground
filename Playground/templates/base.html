@@ -23,7 +23,20 @@
 				  <a class="nav-link" href="{% url n.url_name %}">{{n.name}}</a>
 				</li>
 			  {% endfor %}
+				  <ul class="login-logout">
+					{% if user.is_authenticated %}
+					  <li class="login-logout-form">{{ user.username }}|
+						<form method="post" action="{% url 'logout' %}">
+							{% csrf_token %}
+							<button class="btn" type="submit">Выйти</button>
+						</form>
+					</li>
+					{% else %}
+					<li><a href="{% url 'login' %}">Войти</a> | <a href="{% url 'register' %}">Регистрация</a></li>
+					{% endif %}
+				  </ul>
 		  </ul>
+
 		</div>
 	  </div>
 	</nav>

@@ -1,5 +1,6 @@
 import os
 
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.urls import reverse
 from pytils.translit import slugify
@@ -21,6 +22,8 @@ class Playground(models.Model):
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     cat = models.ManyToManyField('Category', related_name='cat', verbose_name= 'Площадки')
+    author = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL,
+                               related_name='playground', null=True, default=None)
 
 
     class Meta:

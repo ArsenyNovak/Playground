@@ -1,10 +1,10 @@
-from audioop import reverse
-
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, DetailView, FormView, UpdateView
+from django.views.generic import ListView, TemplateView, DetailView, FormView
 
-from .forms import AddPlayGroundForm
+from .forms import AddPlayGroundForm, LoginUserForm
 from .models import Category, Playground, Photo
 
 
@@ -58,16 +58,17 @@ class AllPlayGrounds(ListView):
 
 
 
-class AddPlayGrounds(FormView):
+class AddPlayGrounds(LoginRequiredMixin, FormView):
     template_name = 'SportsGrounds/add_sportground.html'
     form_class = AddPlayGroundForm
     success_url = reverse_lazy('home')
 
     def form_valid(self, form):
-        print(form.cleaned_data)
+
         files = form.cleaned_data["photo_all"]
         pg = Playground(name=form.cleaned_data["name"],
                         description=form.cleaned_data["description"],
+                        author=self.request.user
         )
         pg.save()
         for f in files:
@@ -77,3 +78,13 @@ class AddPlayGrounds(FormView):
         pg.save()
         return super().form_valid(form)
 
+
+class LoginUser(LoginView):
+    form_class = LoginUserForm
+    template_name = 'SportsGrounds/login.html'
+    extra_context = {'title': 'Авторизация'}
+
+    # def form_valid(self, form):
+    #     w = form.save(commit=False)
+    #     w.author = self.request.user
+    #     return super().form_valid(form)
