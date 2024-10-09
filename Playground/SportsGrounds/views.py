@@ -63,6 +63,7 @@ class AddPlayGrounds(LoginRequiredMixin, FormView):
     form_class = AddPlayGroundForm
     success_url = reverse_lazy('home')
 
+
     def form_valid(self, form):
 
         files = form.cleaned_data["photo_all"]
