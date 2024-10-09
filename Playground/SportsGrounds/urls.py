@@ -12,5 +12,5 @@ urlpatterns = [
     path('sport_ground/<slug:sportground_slug>/', views.ShowSportGround.as_view(), name='sport_ground'),
     path('login/', views.LoginUser.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('register/', views.HomePage.as_view(), name='register'),
+    path('register/', views.RegisterCreateUser.as_view(), name='register'),
     ]

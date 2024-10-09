@@ -1,10 +1,12 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
-from django.shortcuts import render
-from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, DetailView, FormView
 
-from .forms import AddPlayGroundForm, LoginUserForm
+from django.shortcuts import render
+from django.template.context_processors import request
+from django.urls import reverse_lazy
+from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView
+
+from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm
 from .models import Category, Playground, Photo
 
 
@@ -85,7 +87,9 @@ class LoginUser(LoginView):
     template_name = 'SportsGrounds/login.html'
     extra_context = {'title': 'Авторизация'}
 
-    # def form_valid(self, form):
-    #     w = form.save(commit=False)
-    #     w.author = self.request.user
-    #     return super().form_valid(form)
+
+class RegisterCreateUser(CreateView):
+    form_class = RegisterUserForm
+    template_name = 'SportsGrounds/register.html'
+    extra_context = {'title': "Регистрация"}
+    success_url = reverse_lazy('login')
