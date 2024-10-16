@@ -25,7 +25,7 @@
 			  {% endfor %}
 				  <ul class="login-logout">
 					{% if user.is_authenticated %}
-					  <li class="login-logout-form">{{ user.username }}|
+					  <li class="login-logout-form"><a href="{% url 'profile' %}">{{user.username}}</a>|
 						<form method="post" action="{% url 'logout' %}">
 							{% csrf_token %}
 							<button class="btn" type="submit">Выйти</button>

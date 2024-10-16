@@ -1,12 +1,13 @@
+from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 
 from django.shortcuts import render
 from django.template.context_processors import request
 from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView
+from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView, UpdateView
 
-from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm
+from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm
 from .models import Category, Playground, Photo
 
 
@@ -93,3 +94,15 @@ class RegisterCreateUser(CreateView):
     template_name = 'SportsGrounds/register.html'
     extra_context = {'title': "Регистрация"}
     success_url = reverse_lazy('login')
+
+
+class ProfileUser(LoginRequiredMixin, UpdateView):
+    form_class = ProfileUserForm
+    template_name = 'SportsGrounds/profile.html'
+    extra_context = {'title': "Профиль пользователя"}
+
+    def get_success_url(self):
+        return reverse_lazy('home')
+
+    def get_object(self, queryset=None):
+        return self.request.user
