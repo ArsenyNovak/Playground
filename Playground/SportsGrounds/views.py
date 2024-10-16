@@ -1,13 +1,14 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView, PasswordChangeView
+from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordResetView
 
 from django.shortcuts import render
 from django.template.context_processors import request
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView, UpdateView
 
-from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm, UserPasswordChangeForm
+from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm, UserPasswordChangeForm, \
+    UserPasswordResetForm
 from .models import Category, Playground, Photo
 
 
@@ -113,3 +114,18 @@ class UserPasswordChange(PasswordChangeView):
     success_url = reverse_lazy("password_change_done")
     template_name = "SportsGrounds/password_change_form.html"
     extra_context = {'title': "Изменение пароля"}
+
+class UserPasswordResetView(PasswordResetView):
+    form_class = UserPasswordResetForm
+    success_url = reverse_lazy("password_reset_done")
+    template_name = "SportsGrounds/password_reset_form.html"
+    # email_template_name = "users/password_reset_email.html"
+    extra_context = {'title': "Восстановление пароля"}
+
+# path('password-reset/',
+#          PasswordResetView.as_view(
+#              template_name="users/password_reset_form.html",
+#              email_template_name="users/password_reset_email.html",
+#              success_url=reverse_lazy("users:password_reset_done")
+#          ),
+#          name='password_reset'),
