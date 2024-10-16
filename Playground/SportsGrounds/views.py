@@ -1,13 +1,13 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordChangeView
 
 from django.shortcuts import render
 from django.template.context_processors import request
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView, UpdateView
 
-from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm
+from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm, UserPasswordChangeForm
 from .models import Category, Playground, Photo
 
 
@@ -106,3 +106,10 @@ class ProfileUser(LoginRequiredMixin, UpdateView):
 
     def get_object(self, queryset=None):
         return self.request.user
+
+
+class UserPasswordChange(PasswordChangeView):
+    form_class = UserPasswordChangeForm
+    success_url = reverse_lazy("password_change_done")
+    template_name = "SportsGrounds/password_change_form.html"
+    extra_context = {'title': "Изменение пароля"}
