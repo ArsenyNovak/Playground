@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm, PasswordResetForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm, PasswordResetForm, \
+    SetPasswordForm
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.forms import ModelChoiceField
@@ -107,5 +108,10 @@ class UserPasswordChangeForm(PasswordChangeForm):
 
 class UserPasswordResetForm(PasswordResetForm):
     email = forms.CharField(label='E-mail', widget=forms.TextInput(attrs={'class': 'form-input'}))
+
+
+class UserSetPasswordForm(SetPasswordForm):
+    new_password1 = forms.CharField(label='Новый пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    new_password2 = forms.CharField(label='Подтв.пароля', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
 
 
