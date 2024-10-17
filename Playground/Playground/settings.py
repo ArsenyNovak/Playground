@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'SportsGrounds.apps.SportsgroundsConfig',
-    'User.apps.UserConfig'
+    'User.apps.UserConfig',
+    'Feedback.apps.FeedbackConfig',
 
 ]
 
@@ -133,7 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'user:login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
@@ -143,6 +144,7 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = "novakarseny@yandex.ru"
 EMAIL_HOST_PASSWORD = ""
 EMAIL_USE_SSL = True
+RECIPIENTS_EMAIL = ['arsenya.11@mail.ru']
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER

@@ -44,6 +44,7 @@ class UserPasswordResetView(PasswordResetView):
     success_url = reverse_lazy("user:password_reset_done")
     template_name = "User/password_reset_form.html"
     extra_context = {'title': "Восстановление пароля"}
+    email_template_name = "User/password_reset_email.html"
 
 class UserPasswordResetConfirmView(PasswordResetConfirmView):
     form_class = UserSetPasswordForm

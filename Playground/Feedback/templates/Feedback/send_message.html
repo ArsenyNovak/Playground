@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="show-sportground-section">
+      <div class="show-sportground-section">
+        <div class="card-add" >
+            <h3>Обратная связь</h3>
+            <hr>
+            <p>Здесь можно отправить предложение и замечания о работе сайта.</p>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-error">{{ form.non_field_errors }}</div>
+                <br>
+                {% for f in form %}
+                <p>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+                {% endfor %}
+                <br>
+                <p class="login-button"><button type="submit">Отправить</button></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
