@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordResetView
+from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordResetView, PasswordResetConfirmView
 
 from django.shortcuts import render
 from django.template.context_processors import request
@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView, UpdateView
 
 from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm, UserPasswordChangeForm, \
-    UserPasswordResetForm
+    UserPasswordResetForm, UserSetPasswordForm
 from .models import Category, Playground, Photo
 
 
@@ -66,6 +66,7 @@ class AddPlayGrounds(LoginRequiredMixin, FormView):
     template_name = 'SportsGrounds/add_sportground.html'
     form_class = AddPlayGroundForm
     success_url = reverse_lazy('home')
+    extra_context = {'title': 'Добавление площадки'}
 
 
     def form_valid(self, form):
@@ -119,13 +120,10 @@ class UserPasswordResetView(PasswordResetView):
     form_class = UserPasswordResetForm
     success_url = reverse_lazy("password_reset_done")
     template_name = "SportsGrounds/password_reset_form.html"
-    # email_template_name = "users/password_reset_email.html"
     extra_context = {'title': "Восстановление пароля"}
 
-# path('password-reset/',
-#          PasswordResetView.as_view(
-#              template_name="users/password_reset_form.html",
-#              email_template_name="users/password_reset_email.html",
-#              success_url=reverse_lazy("users:password_reset_done")
-#          ),
-#          name='password_reset'),
+class UserPasswordResetConfirmView(PasswordResetConfirmView):
+    form_class = UserSetPasswordForm
+    template_name = "SportsGrounds/password_reset_confirm.html"
+    success_url = reverse_lazy("password_reset_complete")
+    extra_context = {'title': "Новый пороль"}
