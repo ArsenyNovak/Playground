@@ -1,14 +1,9 @@
-from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView, PasswordChangeView, PasswordResetView, PasswordResetConfirmView
 
-from django.shortcuts import render
-from django.template.context_processors import request
 from django.urls import reverse_lazy
-from django.views.generic import ListView, TemplateView, DetailView, FormView, CreateView, UpdateView
+from django.views.generic import ListView, TemplateView, DetailView, FormView
 
-from .forms import AddPlayGroundForm, LoginUserForm, RegisterUserForm, ProfileUserForm, UserPasswordChangeForm, \
-    UserPasswordResetForm, UserSetPasswordForm
+from .forms import AddPlayGroundForm
 from .models import Category, Playground, Photo
 
 
@@ -85,45 +80,4 @@ class AddPlayGrounds(LoginRequiredMixin, FormView):
         return super().form_valid(form)
 
 
-class LoginUser(LoginView):
-    form_class = LoginUserForm
-    template_name = 'SportsGrounds/login.html'
-    extra_context = {'title': 'Авторизация'}
 
-
-class RegisterCreateUser(CreateView):
-    form_class = RegisterUserForm
-    template_name = 'SportsGrounds/register.html'
-    extra_context = {'title': "Регистрация"}
-    success_url = reverse_lazy('login')
-
-
-class ProfileUser(LoginRequiredMixin, UpdateView):
-    form_class = ProfileUserForm
-    template_name = 'SportsGrounds/profile.html'
-    extra_context = {'title': "Профиль пользователя"}
-
-    def get_success_url(self):
-        return reverse_lazy('home')
-
-    def get_object(self, queryset=None):
-        return self.request.user
-
-
-class UserPasswordChange(PasswordChangeView):
-    form_class = UserPasswordChangeForm
-    success_url = reverse_lazy("password_change_done")
-    template_name = "SportsGrounds/password_change_form.html"
-    extra_context = {'title': "Изменение пароля"}
-
-class UserPasswordResetView(PasswordResetView):
-    form_class = UserPasswordResetForm
-    success_url = reverse_lazy("password_reset_done")
-    template_name = "SportsGrounds/password_reset_form.html"
-    extra_context = {'title': "Восстановление пароля"}
-
-class UserPasswordResetConfirmView(PasswordResetConfirmView):
-    form_class = UserSetPasswordForm
-    template_name = "SportsGrounds/password_reset_confirm.html"
-    success_url = reverse_lazy("password_reset_complete")
-    extra_context = {'title': "Новый пороль"}
