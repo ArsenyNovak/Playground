@@ -14,7 +14,7 @@
                 <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>{{ f }}</p>
                 <div class="form-error">{{ f.errors }}</div>
                 {% endfor %}
-                <p class="login-button"><button type="submit">Сохранить</button></p>
+                <p class="login-button"><button class="btn btn-success" type="submit">Сохранить</button></p>
             </form>
             <hr>
             <p ><a href="{% url 'user:password_change' %}">Сменить пароль</a></p>

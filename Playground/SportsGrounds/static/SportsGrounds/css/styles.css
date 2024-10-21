@@ -1,5 +1,11 @@
 
 /* base.html*/
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: rgba(255, 255, 255, 0.55);
 }
@@ -176,3 +182,12 @@ ul {
 .card-title {
   color: rgba(255, 255, 255, 0.55);
 }
+
+.card-comment {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+

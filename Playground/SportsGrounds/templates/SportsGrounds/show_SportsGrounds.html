@@ -15,6 +15,35 @@
         <p class="card-text"> {{playground.description|linebreaks}}</p>
         <hr>
         <p class="description-playground">дата последнего редактирования: {{playground.time_update|date:"d-m-Y H:i:s"}}</p>
+        <hr>
+        {% if user.is_authenticated %}
+        <form action="" method="POST">
+          {% csrf_token %}
+            <div class="card-add" >
+                <p>{{ form.text }}</p>
+                <p><button class="btn btn-success" type="submit">оставить коментарий</button></p>
+            </div>
+        </form>
+        {% endif %}
+        <p class="d-inline-flex gap-1 card-add">
+          <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Посмотреть комментарии
+          </a>
+        </p>
+        <div class="collapse card-add" id="collapseExample">
+            {% if playground.comments.exists %}
+                {% for comment in playground.comments.all %}
+                  <div class="card-comment">
+                     <p class="card-text"> {{ comment.author }}: {{ comment.text }}</p>
+                      <br>
+                     <p class="card-text">{{ comment.time_create }}</p>
+                  </div>
+                {% endfor %}
+            {% else %}
+                <br>
+                <p class="card-text">здесь пока нет комментариев</p>
+            {% endif %}
+        </div>
     </div>
 </div>
 </div>

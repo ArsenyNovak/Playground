@@ -1,10 +1,12 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import ImproperlyConfigured
 
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView
+from django.views.generic.edit import FormMixin
 
-from .forms import AddPlayGroundForm
-from .models import Category, Playground, Photo
+from .forms import AddPlayGroundForm, AddCommentForm
+from .models import Category, Playground, Photo, Comment
 
 
 # Create your views here.
@@ -36,14 +38,38 @@ class ShowCategory(ListView):
         context = super().get_context_data(**kwargs)
         cat = Category.objects.filter(slug=self.kwargs['cat_slug'])
         context["cat"] = cat[0].name
+        context["title"] = cat[0].name
         return context
 
 
-class ShowSportGround(DetailView):
+class ShowSportGround(DetailView, FormMixin):
     model = Playground
+    form_class = AddCommentForm
     template_name = 'SportsGrounds/show_SportsGrounds.html'
     context_object_name = 'playground'
     slug_url_kwarg = 'sportground_slug'
+    extra_context = {'title': 'Просмотр площадки'}
+
+    def post(self, request, *args, **kwargs):
+        form = self.get_form()
+        if form.is_valid():
+            return self.form_valid(form)
+        else:
+            return self.form_invalid(form)
+
+    def form_valid(self, form):
+        com = Comment(playground=Playground.objects.get(slug=self.kwargs["sportground_slug"]),
+                      text=form.cleaned_data["text"],
+                      author=self.request.user
+        )
+        com.save()
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        self.success_url = reverse_lazy('sport_ground', args=[self.kwargs['sportground_slug']])
+        if not self.success_url:
+            raise ImproperlyConfigured("No URL to redirect to. Provide a success_url.")
+        return str(self.success_url)
 
 
 class AllPlayGrounds(ListView):
@@ -51,6 +77,7 @@ class AllPlayGrounds(ListView):
     template_name = 'SportsGrounds/show_category.html'
     context_object_name = 'playgrounds'
     allow_empty = False
+    extra_context = {'title': 'Все площадки'}
 
     def get_queryset(self):
         return Playground.objects.filter(is_published=True)

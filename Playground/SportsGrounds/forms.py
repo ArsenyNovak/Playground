@@ -2,7 +2,7 @@ from django import forms
 
 from django.forms import ModelChoiceField
 
-from SportsGrounds.models import Playground, Category
+from SportsGrounds.models import Playground, Category, Comment
 
 
 class MultipleFileInput(forms.ClearableFileInput):
@@ -50,5 +50,7 @@ class AddPlayGroundForm(forms.Form):
 
 
 
+class AddCommentForm(forms.Form):
+    text = forms.CharField(widget=forms.Textarea(attrs={'cols':60, 'rows': 3}))
 
 

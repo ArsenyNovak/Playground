@@ -77,3 +77,19 @@ class Photo(models.Model):
 
     def __str__(self):
         return self.image.url.split('/')[-1]
+
+
+class Comment(models.Model):
+    playground = models.ForeignKey('Playground', on_delete=models.CASCADE, related_name='comments')
+    text = models.TextField(verbose_name='Описание')
+    author = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL,
+                               related_name='comments', null=True, default=None)
+    time_create = models.DateTimeField(auto_now_add=True, null=True)
+
+    def __str__(self):
+        return f'Comment by {self.author} on {self.playground}'
+
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'
+        ordering = ['-time_create']

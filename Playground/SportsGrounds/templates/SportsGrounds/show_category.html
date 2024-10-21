@@ -12,13 +12,13 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-2">
-                  <img src="{{p.photo.first.image.url}}" class="img-fluid rounded-start" alt="фото площадки">
+                  <img src="{{p.photo.last.image.url}}" class="img-fluid rounded-start" alt="фото площадки">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
                     <h4 class="card-title">{{p.name}}</h4>
                     <p class="card-text">{{p.description|linebreaks|truncatewords:40}}
-                        <a href="{{ p.get_absolute_url }}">посмотреть полностью</a>
+                        <a class="link-info" href="{{ p.get_absolute_url }}">посмотреть полностью</a>
                     </p>
                   </div>
                 </div>
