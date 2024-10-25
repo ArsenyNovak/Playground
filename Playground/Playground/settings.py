@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'SportsGrounds.apps.SportsgroundsConfig',
     'User.apps.UserConfig',
     'Feedback.apps.FeedbackConfig',
+    'rest_framework',
 
 ]
 
@@ -124,6 +125,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -142,9 +144,10 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.yandex.ru"
 EMAIL_PORT = 465
 EMAIL_HOST_USER = "novakarseny@yandex.ru"
-EMAIL_HOST_PASSWORD = ""
+EMAIL_HOST_PASSWORD = "eeohpfmvrckipwyf"
 EMAIL_USE_SSL = True
 RECIPIENTS_EMAIL = ['arsenya.11@mail.ru']
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
+

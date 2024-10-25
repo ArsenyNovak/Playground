@@ -191,3 +191,8 @@ ul {
 
 }
 
+.page-link {
+  background-color: rgba(43, 48, 53, 1);
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid black;
+}

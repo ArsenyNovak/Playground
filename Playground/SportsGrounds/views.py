@@ -28,7 +28,7 @@ class ShowCategory(ListView):
     template_name = 'SportsGrounds/show_category.html'
     context_object_name = 'playgrounds'
     allow_empty = False
-    paginate_by = 5
+    paginate_by = 3
 
 
     def get_queryset(self):
@@ -78,6 +78,7 @@ class AllPlayGrounds(ListView):
     context_object_name = 'playgrounds'
     allow_empty = False
     extra_context = {'title': 'Все площадки'}
+    paginate_by = 3
 
     def get_queryset(self):
         return Playground.objects.filter(is_published=True)
