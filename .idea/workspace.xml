@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6d972b2-77dd-43cb-801c-1671ab60b614" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/Playground.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/SportsGrounds/static/SportsGrounds/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/SportsGrounds/templates/SportsGrounds/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/SportsGrounds/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Playground/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Playground/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Playground/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Playground/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/SportsGrounds/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/SportsGrounds/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/SportsGrounds/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/SportsGrounds/models.py" afterDir="false" />
+    <list default="true" id="d6d972b2-77dd-43cb-801c-1671ab60b614" name="Changes" comment="install DRF&#10;fix views AllPlayGrounds: add atribyte paginate_by,&#10;add in template &quot;show_category.html&quot; paginate,">
+      <change afterPath="$PROJECT_DIR$/Playground/SportsGrounds/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/SportsGrounds/static/SportsGrounds/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/SportsGrounds/static/SportsGrounds/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/SportsGrounds/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/SportsGrounds/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Playground/SportsGrounds/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/SportsGrounds/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Playground/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/db.sqlite3" afterDir="false" />
     </list>
@@ -29,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,33 +44,94 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2mKCWHsnRY8eYqsKDwPVJCs3wmA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/arseny/PycharmProjects/proj_django",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.admin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DRF&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/arseny/PycharmProjects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/User/templates/User" />
+      <recent name="$PROJECT_DIR$/Playground/SportsGrounds/templates/User" />
       <recent name="$PROJECT_DIR$/Playground/SportsGrounds/static/SportsGrounds" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Playground" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/django/conf/urls" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/django/conf/urls/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Playground" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Playground)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Playground" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Playground/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.__init__" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d6d972b2-77dd-43cb-801c-1671ab60b614" name="Changes" comment="" />
@@ -96,11 +148,155 @@
       <option name="project" value="LOCAL" />
       <updated>1726817114395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make migrations _3">
+      <option name="closed" value="true" />
+      <created>1728039362157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728039362157</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change model Photo: dinamic create folder for image&#10;make migrations _4">
+      <option name="closed" value="true" />
+      <created>1728056047122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728056047122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add login and logout views &#10;make migrations _5 (add author to Playgrounds)">
+      <option name="closed" value="true" />
+      <created>1728398783650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728398783650</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix parameter &quot;next&quot; (redirect login)">
+      <option name="closed" value="true" />
+      <created>1728468967203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728468967203</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create rigister functional&#10;change about.html">
+      <option name="closed" value="true" />
+      <created>1728483637811</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728483637811</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create Update USER">
+      <option name="closed" value="true" />
+      <created>1729069759755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729069759755</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create Change password">
+      <option name="closed" value="true" />
+      <created>1729072021943</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729072021943</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create reset password">
+      <option name="closed" value="true" />
+      <created>1729087983077</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729087983078</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix form on reset password&#10;fix title on views">
+      <option name="closed" value="true" />
+      <created>1729149715759</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729149715759</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix add SportGround.html">
+      <option name="closed" value="true" />
+      <created>1729151495108</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729151495108</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add files 5 migration, basketball.jpg, football.jpg, volleyball.jpg">
+      <option name="closed" value="true" />
+      <created>1729151949127</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729151949127</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update database">
+      <option name="closed" value="true" />
+      <created>1729152157495</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729152157495</updated>
+    </task>
+    <task id="LOCAL-00014" summary="create app user instead of simple model user">
+      <option name="closed" value="true" />
+      <created>1729156422908</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729156422908</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create Feedback&#10;fix redirect for not authorized user">
+      <option name="closed" value="true" />
+      <created>1729172110056</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729172110056</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create model comment&#10;fix button: all buttons have one style,&#10;fix link: &quot;посмотреть полностью&quot;&#10;fix views ShowCategory, AllPlayGrounds: context &quot;title&quot;&#10;add google fonts">
+      <option name="closed" value="true" />
+      <created>1729492632252</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729492632252</updated>
+    </task>
+    <task id="LOCAL-00017" summary="install DRF&#10;fix views AllPlayGrounds: add atribyte paginate_by,&#10;add in template &quot;show_category.html&quot; paginate,">
+      <option name="closed" value="true" />
+      <created>1729855426047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729855426048</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="make migrations _3" />
+    <MESSAGE value="change model Photo: dinamic create folder for image&#10;make migrations _4" />
+    <MESSAGE value="add login and logout views &#10;make migrations _5 (add author to Playgrounds)" />
+    <MESSAGE value="fix parameter &quot;next&quot; (redirect login)" />
+    <MESSAGE value="create rigister functional&#10;change about.html" />
+    <MESSAGE value="create Update USER" />
+    <MESSAGE value="create Change password" />
+    <MESSAGE value="create reset password" />
+    <MESSAGE value="fix form on reset password&#10;fix title on views" />
+    <MESSAGE value="fix add SportGround.html" />
+    <MESSAGE value="add files 5 migration, basketball.jpg, football.jpg, volleyball.jpg" />
+    <MESSAGE value="update database" />
+    <MESSAGE value="create app user instead of simple model user" />
+    <MESSAGE value="create Feedback&#10;fix redirect for not authorized user" />
+    <MESSAGE value="create model comment&#10;fix button: all buttons have one style,&#10;fix link: &quot;посмотреть полностью&quot;&#10;fix views ShowCategory, AllPlayGrounds: context &quot;title&quot;&#10;add google fonts" />
+    <MESSAGE value="install DRF&#10;fix views AllPlayGrounds: add atribyte paginate_by,&#10;add in template &quot;show_category.html&quot; paginate," />
+    <option name="LAST_COMMIT_MESSAGE" value="install DRF&#10;fix views AllPlayGrounds: add atribyte paginate_by,&#10;add in template &quot;show_category.html&quot; paginate," />
   </component>
 </project>

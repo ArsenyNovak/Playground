@@ -4,9 +4,11 @@ from django.core.exceptions import ImproperlyConfigured
 from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView
 from django.views.generic.edit import FormMixin
+from rest_framework.generics import ListAPIView
 
 from .forms import AddPlayGroundForm, AddCommentForm
 from .models import Category, Playground, Photo, Comment
+from .serializers import PlaygroundSerializer
 
 
 # Create your views here.
@@ -107,5 +109,17 @@ class AddPlayGrounds(LoginRequiredMixin, FormView):
         pg.save()
         return super().form_valid(form)
 
+class AllPlayGroundsAPI(ListAPIView):
+    queryset = Playground.objects.filter(is_published=True)
+    serializer_class = PlaygroundSerializer
 
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
 
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        pass
