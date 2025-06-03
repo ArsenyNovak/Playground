@@ -5,10 +5,12 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, DetailView, FormView
 from django.views.generic.edit import FormMixin
 from rest_framework.generics import ListAPIView
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.response import Response
 
 from .forms import AddPlayGroundForm, AddCommentForm
 from .models import Category, Playground, Photo, Comment
-from .serializers import PlaygroundSerializer
+from .serializers import PlaygroundSerializer, CategorySerializer
 
 
 # Create your views here.
@@ -109,9 +111,19 @@ class AddPlayGrounds(LoginRequiredMixin, FormView):
         pg.save()
         return super().form_valid(form)
 
-class AllPlayGroundsAPI(ListAPIView):
-    queryset = Playground.objects.filter(is_published=True)
+
+class CategoryApiList(ListAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+class PlaygroundPagination(PageNumberPagination):
+    page_size = 5
+    page_size_query_param = 'page_size'
+    max_page_size = 20
+
+class PlayGroundsApi(ListAPIView):
     serializer_class = PlaygroundSerializer
+    pagination_class = PlaygroundPagination
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
@@ -122,4 +134,17 @@ class AllPlayGroundsAPI(ListAPIView):
             return self.get_paginated_response(serializer.data)
 
         serializer = self.get_serializer(queryset, many=True)
-        pass
+        return Response(serializer.data)
+
+    def get_queryset(self):
+        slug = self.kwargs['cat_slug']
+        if slug != 'all':
+            return Playground.objects.filter(cat__slug=slug, is_published=True)
+        return Playground.objects.filter(is_published=True)
+
+
+class PlaygroundsApiDetail(ListAPIView):
+    serializer_class = PlaygroundSerializer
+
+    def get_queryset(self):
+        return Playground.objects.filter(slug=self.kwargs["sportground_slug"])

@@ -1,8 +1,14 @@
 from rest_framework import serializers
-from .models import Playground
+from .models import Playground, Category
 
 
 class PlaygroundSerializer(serializers.ModelSerializer):
     class Meta:
         model = Playground
-        fields = ('name', 'cat')
+        fields = '__all__'
+
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
