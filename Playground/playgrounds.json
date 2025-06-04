@@ -1,0 +1,1775 @@
+[
+{
+  "model": "SportsGrounds.category",
+  "pk": 1,
+  "fields": {
+    "name": "Бадминтон",
+    "slug": "badminton",
+    "image": "category_photo/badminton_GnsS8DL.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 2,
+  "fields": {
+    "name": "Баскетбол",
+    "slug": "basketbol",
+    "image": "category_photo/basketball_QDjnWAh.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 3,
+  "fields": {
+    "name": "Волейбол",
+    "slug": "volejbol",
+    "image": "category_photo/volleyball_Sxoya43.jpeg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 4,
+  "fields": {
+    "name": "Пляжный волейбол",
+    "slug": "plyazhnyj-volejbol",
+    "image": "category_photo/beach_volley_BDZSA6R.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 5,
+  "fields": {
+    "name": "Теннис",
+    "slug": "tennis",
+    "image": "category_photo/tennis_zzOCPCM.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 6,
+  "fields": {
+    "name": "Футбол",
+    "slug": "futbol",
+    "image": "category_photo/football_pTZIXq5.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.category",
+  "pk": 7,
+  "fields": {
+    "name": "Настольный теннис",
+    "slug": "nastolnyj-tennis",
+    "image": "category_photo/table_tennis.jpg"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 1,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_10.jpg",
+    "time_create": "2024-10-24T14:38:17.199Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 2,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_9.jpg",
+    "time_create": "2024-10-24T14:38:17.202Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 3,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_8.jpg",
+    "time_create": "2024-10-24T14:38:17.203Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 4,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_7.jpg",
+    "time_create": "2024-10-24T14:38:17.204Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 5,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_6.jpg",
+    "time_create": "2024-10-24T14:38:17.205Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 6,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_5.jpg",
+    "time_create": "2024-10-24T14:38:17.207Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 7,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_4.jpg",
+    "time_create": "2024-10-24T14:38:17.208Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 8,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_3.jpg",
+    "time_create": "2024-10-24T14:38:17.209Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 9,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_2.jpg",
+    "time_create": "2024-10-24T14:38:17.210Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 10,
+  "fields": {
+    "playground": 1,
+    "image": "playground_photos/shkola-61-g-minska/School_61_1.jpg",
+    "time_create": "2024-10-24T14:38:17.211Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 11,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_8.jpg",
+    "time_create": "2024-10-24T14:45:23.752Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 12,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_7.jpg",
+    "time_create": "2024-10-24T14:45:23.753Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 13,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_6.jpg",
+    "time_create": "2024-10-24T14:45:23.753Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 14,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_5.jpg",
+    "time_create": "2024-10-24T14:45:23.754Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 15,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_4.jpg",
+    "time_create": "2024-10-24T14:45:23.755Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 16,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_3.jpg",
+    "time_create": "2024-10-24T14:45:23.755Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 17,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_2.jpg",
+    "time_create": "2024-10-24T14:45:23.756Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 18,
+  "fields": {
+    "playground": 2,
+    "image": "playground_photos/shkola-19-g-minsk-za-filarmoniej/School_19_1.jpg",
+    "time_create": "2024-10-24T14:45:23.756Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 19,
+  "fields": {
+    "playground": 3,
+    "image": "playground_photos/park-chelyuskintsev/Chelyuskintsev_Park_5.jpg",
+    "time_create": "2024-10-24T14:46:13.241Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 20,
+  "fields": {
+    "playground": 3,
+    "image": "playground_photos/park-chelyuskintsev/Chelyuskintsev_Park_4.jpg",
+    "time_create": "2024-10-24T14:46:13.242Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 21,
+  "fields": {
+    "playground": 3,
+    "image": "playground_photos/park-chelyuskintsev/Chelyuskintsev_Park_3.jpg",
+    "time_create": "2024-10-24T14:46:13.242Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 22,
+  "fields": {
+    "playground": 3,
+    "image": "playground_photos/park-chelyuskintsev/Chelyuskintsev_Park_2.jpg",
+    "time_create": "2024-10-24T14:46:13.243Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 23,
+  "fields": {
+    "playground": 3,
+    "image": "playground_photos/park-chelyuskintsev/Chelyuskintsev_Park_1.jpg",
+    "time_create": "2024-10-24T14:46:13.244Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 24,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-46.jpg",
+    "time_create": "2024-10-24T14:47:21.012Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 25,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-43.jpg",
+    "time_create": "2024-10-24T14:47:21.013Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 26,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-42.jpg",
+    "time_create": "2024-10-24T14:47:21.014Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 27,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-40.jpg",
+    "time_create": "2024-10-24T14:47:21.015Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 28,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-39.jpg",
+    "time_create": "2024-10-24T14:47:21.015Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 29,
+  "fields": {
+    "playground": 4,
+    "image": "playground_photos/shkola-1-dkopische/photo_2024-10-10_17-45-37.jpg",
+    "time_create": "2024-10-24T14:47:21.016Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 30,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-34.jpg",
+    "time_create": "2024-10-24T14:48:16.822Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 31,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-32.jpg",
+    "time_create": "2024-10-24T14:48:16.824Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 32,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-31.jpg",
+    "time_create": "2024-10-24T14:48:16.824Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 33,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-28.jpg",
+    "time_create": "2024-10-24T14:48:16.825Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 34,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-25.jpg",
+    "time_create": "2024-10-24T14:48:16.826Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 35,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-23.jpg",
+    "time_create": "2024-10-24T14:48:16.826Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 36,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-22.jpg",
+    "time_create": "2024-10-24T14:48:16.827Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 37,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-20.jpg",
+    "time_create": "2024-10-24T14:48:16.828Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 38,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-19.jpg",
+    "time_create": "2024-10-24T14:48:16.828Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 39,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-45-13.jpg",
+    "time_create": "2024-10-24T14:48:16.829Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 40,
+  "fields": {
+    "playground": 5,
+    "image": "playground_photos/sanatorij-zelyonyij-bor/photo_2024-10-10_17-38-47.jpg",
+    "time_create": "2024-10-24T14:48:16.830Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 41,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-35-55.jpg",
+    "time_create": "2024-10-24T14:49:10.479Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 42,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-34-23.jpg",
+    "time_create": "2024-10-24T14:49:10.480Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 43,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-33-17_2.jpg",
+    "time_create": "2024-10-24T14:49:10.481Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 44,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-33-17.jpg",
+    "time_create": "2024-10-24T14:49:10.482Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 45,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-33-16.jpg",
+    "time_create": "2024-10-24T14:49:10.482Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 46,
+  "fields": {
+    "playground": 6,
+    "image": "playground_photos/plyazh-1-minskoe-more/photo_2024-10-15_16-33-15.jpg",
+    "time_create": "2024-10-24T14:49:10.483Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 47,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_10.jpg",
+    "time_create": "2024-10-24T14:50:14.138Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 48,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_9.jpg",
+    "time_create": "2024-10-24T14:50:14.140Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 49,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_8.jpg",
+    "time_create": "2024-10-24T14:50:14.141Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 50,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_7.jpg",
+    "time_create": "2024-10-24T14:50:14.143Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 51,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_6.jpg",
+    "time_create": "2024-10-24T14:50:14.144Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 52,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_5.jpg",
+    "time_create": "2024-10-24T14:50:14.144Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 53,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_4.jpg",
+    "time_create": "2024-10-24T14:50:14.145Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 54,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_3.jpg",
+    "time_create": "2024-10-24T14:50:14.146Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 55,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_2.jpg",
+    "time_create": "2024-10-24T14:50:14.147Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 56,
+  "fields": {
+    "playground": 7,
+    "image": "playground_photos/shkola-55-g-minsk/Shool_55_Minsk_1.jpg",
+    "time_create": "2024-10-24T14:50:14.147Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 57,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_6.jpg",
+    "time_create": "2024-10-24T14:51:08.277Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 58,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_5.jpg",
+    "time_create": "2024-10-24T14:51:08.279Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 59,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_4.jpg",
+    "time_create": "2024-10-24T14:51:08.280Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 60,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_3.jpg",
+    "time_create": "2024-10-24T14:51:08.282Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 61,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_2.jpg",
+    "time_create": "2024-10-24T14:51:08.283Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 62,
+  "fields": {
+    "playground": 8,
+    "image": "playground_photos/shkola-54-g-minska/Shool_54_Minsk_1.jpg",
+    "time_create": "2024-10-24T14:51:08.284Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 63,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_6.jpg",
+    "time_create": "2024-10-24T14:51:52.425Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 64,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_5.jpg",
+    "time_create": "2024-10-24T14:51:52.426Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 65,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_4.jpg",
+    "time_create": "2024-10-24T14:51:52.427Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 66,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_3.jpg",
+    "time_create": "2024-10-24T14:51:52.427Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 67,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_2.jpg",
+    "time_create": "2024-10-24T14:51:52.428Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 68,
+  "fields": {
+    "playground": 9,
+    "image": "playground_photos/shkola-153-g-minska/Shool_153_Minsk_1.jpg",
+    "time_create": "2024-10-24T14:51:52.428Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 69,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_8.jpg",
+    "time_create": "2024-10-24T14:53:11.207Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 70,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_7.jpg",
+    "time_create": "2024-10-24T14:53:11.209Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 71,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_6.jpg",
+    "time_create": "2024-10-24T14:53:11.209Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 72,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_5.jpg",
+    "time_create": "2024-10-24T14:53:11.210Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 73,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_4.jpg",
+    "time_create": "2024-10-24T14:53:11.211Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 74,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_3.jpg",
+    "time_create": "2024-10-24T14:53:11.211Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 75,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_2.jpg",
+    "time_create": "2024-10-24T14:53:11.212Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 76,
+  "fields": {
+    "playground": 10,
+    "image": "playground_photos/shkola-17-g-minska/School_17_Minsk_1.jpg",
+    "time_create": "2024-10-24T14:53:11.213Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 77,
+  "fields": {
+    "playground": 11,
+    "image": "playground_photos/lyutsinskaya-23-gminsk/lucinskaya_23_5.jpg",
+    "time_create": "2024-11-05T20:24:22.120Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 78,
+  "fields": {
+    "playground": 11,
+    "image": "playground_photos/lyutsinskaya-23-gminsk/lucinskaya_23_4.jpg",
+    "time_create": "2024-11-05T20:24:22.121Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 79,
+  "fields": {
+    "playground": 11,
+    "image": "playground_photos/lyutsinskaya-23-gminsk/lucinskaya_23_3.jpg",
+    "time_create": "2024-11-05T20:24:22.122Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 80,
+  "fields": {
+    "playground": 11,
+    "image": "playground_photos/lyutsinskaya-23-gminsk/lucinskaya_23_2.jpg",
+    "time_create": "2024-11-05T20:24:22.123Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 81,
+  "fields": {
+    "playground": 11,
+    "image": "playground_photos/lyutsinskaya-23-gminsk/lucinskaya_23_1.jpg",
+    "time_create": "2024-11-05T20:24:22.124Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 82,
+  "fields": {
+    "playground": 12,
+    "image": "playground_photos/lyutsinskaya-29-g-minsk/lucinskaya_29_2.jpg",
+    "time_create": "2024-11-05T20:30:37.708Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 83,
+  "fields": {
+    "playground": 12,
+    "image": "playground_photos/lyutsinskaya-29-g-minsk/lucinskaya_29_1.jpg",
+    "time_create": "2024-11-05T20:30:37.709Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 84,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_7.jpg",
+    "time_create": "2024-11-05T20:36:00.855Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 85,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_6.jpg",
+    "time_create": "2024-11-05T20:36:00.856Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 86,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_5.jpg",
+    "time_create": "2024-11-05T20:36:00.857Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 87,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_4.jpg",
+    "time_create": "2024-11-05T20:36:00.857Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 88,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_3.jpg",
+    "time_create": "2024-11-05T20:36:00.858Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 89,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_2.jpg",
+    "time_create": "2024-11-05T20:36:00.858Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 90,
+  "fields": {
+    "playground": 13,
+    "image": "playground_photos/shkola-52-g-minska/Shool_52_Minsk_1.jpg",
+    "time_create": "2024-11-05T20:36:00.859Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 91,
+  "fields": {
+    "playground": 14,
+    "image": "playground_photos/nalibokskaya-46-g-minsk/nalibokskaya_46_4.jpg",
+    "time_create": "2024-11-05T20:40:43.890Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 92,
+  "fields": {
+    "playground": 14,
+    "image": "playground_photos/nalibokskaya-46-g-minsk/nalibokskaya_46_3.jpg",
+    "time_create": "2024-11-05T20:40:43.891Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 93,
+  "fields": {
+    "playground": 14,
+    "image": "playground_photos/nalibokskaya-46-g-minsk/nalibokskaya_46_2.jpg",
+    "time_create": "2024-11-05T20:40:43.892Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 94,
+  "fields": {
+    "playground": 14,
+    "image": "playground_photos/nalibokskaya-46-g-minsk/nalibokskaya_46_1.jpg",
+    "time_create": "2024-11-05T20:40:43.893Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 95,
+  "fields": {
+    "playground": 15,
+    "image": "playground_photos/kamennogorskaya-90-g-minsk/Kamennogorskaya_90_2.jpg",
+    "time_create": "2024-11-05T20:44:29.695Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 96,
+  "fields": {
+    "playground": 15,
+    "image": "playground_photos/kamennogorskaya-90-g-minsk/Kamennogorskaya_90_1.jpg",
+    "time_create": "2024-11-05T20:44:29.696Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 97,
+  "fields": {
+    "playground": 16,
+    "image": "playground_photos/kamennogorskaya-96-g-minsk/Kamennogorskaya_96_1.jpg",
+    "time_create": "2024-11-05T20:47:54.083Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 98,
+  "fields": {
+    "playground": 17,
+    "image": "playground_photos/kamennogorskaya-104-g-minsk/Kamennogorskaya_104_3.jpg",
+    "time_create": "2024-11-05T20:52:40.597Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 99,
+  "fields": {
+    "playground": 17,
+    "image": "playground_photos/kamennogorskaya-104-g-minsk/Kamennogorskaya_104_2.jpg",
+    "time_create": "2024-11-05T20:52:40.598Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 100,
+  "fields": {
+    "playground": 17,
+    "image": "playground_photos/kamennogorskaya-104-g-minsk/Kamennogorskaya_104_1.jpg",
+    "time_create": "2024-11-05T20:52:40.599Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 101,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_9.jpg",
+    "time_create": "2024-11-05T21:00:14.751Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 102,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_8.jpg",
+    "time_create": "2024-11-05T21:00:14.752Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 103,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_7.jpg",
+    "time_create": "2024-11-05T21:00:14.753Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 104,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_6.jpg",
+    "time_create": "2024-11-05T21:00:14.753Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 105,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_5.jpg",
+    "time_create": "2024-11-05T21:00:14.754Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 106,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_4.jpg",
+    "time_create": "2024-11-05T21:00:14.754Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 107,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_3.jpg",
+    "time_create": "2024-11-05T21:00:14.754Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 108,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_2.jpg",
+    "time_create": "2024-11-05T21:00:14.755Z"
+  }
+},
+{
+  "model": "SportsGrounds.photo",
+  "pk": 109,
+  "fields": {
+    "playground": 18,
+    "image": "playground_photos/shkola-56-g-minska/Shool_56_Minsk_1.jpg",
+    "time_create": "2024-11-05T21:00:14.755Z"
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 1,
+  "fields": {
+    "name": "школа №61 г. Минска",
+    "slug": "shkola-61-g-minska",
+    "description": "На территории школы находятся 5 спортивных площадок:\r\n1. Футбольное поле. Размеры поля 50х30, ворота большие, на воротах присутствует сетка. По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором. Покрытие поля резина. Состояние покрытия хорошее, также присутствует разметка.\r\n2. Площадка для бадминтона. Стоят столбы с кольцами, однако на необходимой высоте отсутствует кольцо (1.55м). Покрытие резина. Состояние покрытия хорошее, также присутствует вся необходимая для игры разметка.\r\n3.Баскетбольное поле. Размеры поля 25х15, на кольцах весит сетка. По периметру площадка огорожена забором.  Покрытие резина. Состояние покрытия хорошее, также присутствует вся необходимая для игры разметка.\r\n4.Волейбольное поле. Размеры поля 18х9, стоят высокие столбы, с кольцами с возможностью повесить сетку на различную высоту. По периметру площадка огорожена забором. Покрытие резина, в хорошем состоянии. На площадке присутствует вся необходимая разметка. Так же на площадке есть вышка для судьи.\r\n5. Хоккейная коробка.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:38:17.195Z",
+    "time_update": "2024-10-24T14:39:12.122Z",
+    "author": 1,
+    "cat": [
+      1,
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 2,
+  "fields": {
+    "name": "школа №19 г. Минск (за филармонией)",
+    "slug": "shkola-19-g-minsk-za-filarmoniej",
+    "description": "На территории школы находятся 4 спортивные площадки:\r\n1. Футбольное поле. Размеры поля 40х25, ворота большие, сетка на воротах отсутствует. По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором. Покрытие поля искусственная трава. В некоторых местах покрытие повреждено и присутствуют небольшие дыры.\r\n2. Футбольно/баскетбольное поле. Размеры поля 30х17, ворота стоят для минифутбола. По периметру площадка огорожена сеткой.  Покрытие резина. В некоторых местах покрытие повреждено и присутствуют небольшие дыры.\r\n3.Волейбольное поле. Размеры поля 18х9, стоят высокие столбы, но не закреплена труба с крючками для сетки, поэтому поиграть на площадке  не получится. Покрытие резина, в хорошем состоянии. На площадке присутствует разметка.\r\n4. Корт для тенниса.  Размеры корта стандартные (~ 24x11). Стоят столбы с крючками для сетки. Покрытие корта искусственная трава. С годами покрытие немного облысело и покрылось песком, но в целом находится в хорошем состоянии (отсутствуют дыры). На площадке присутствует вся необходимая разметка. Корт огорожен забором. \r\nТеннисный корт пользуется большой популярностью и в хорошую погоду очень часто занят любителями большого тенниса.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:45:23.749Z",
+    "time_update": "2024-10-24T14:54:34.464Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 3,
+  "fields": {
+    "name": "Парк Челюскинцев",
+    "slug": "park-chelyuskintsev",
+    "description": "На территории парка находятся следующие спортивные площадки:\r\n1. Три площадки для игры в волейбол.  Размеры поля стандартные 18х9. Покрытие резина, в хорошем состоянии.  На всех площадках на столбах присутствуют удобные крючки чтобы повесить сетку. Летом на одной из площадок сетка висела постоянно. Площадка частично огорожена небольшим забором. Также на каждой площадке есть вышка для судьи. Площадки практически со всех сторон окружены лесом и поэтому даже в ветреную погоду здесь достаточно комфортно.\r\n2. В парке раньше находилось несколько грунтовых кортов для тенниса, но сейчас они пришли в негодность и закрыты на замок.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:46:13.239Z",
+    "time_update": "2024-10-24T14:53:45.041Z",
+    "author": 1,
+    "cat": [
+      3
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 4,
+  "fields": {
+    "name": "Школа №1 д.Копище",
+    "slug": "shkola-1-dkopische",
+    "description": "На территории школы находятся 4 спортивные площадки:\r\n1. Футбольное поле. Размеры поля 60х30, ворота большие, сетка на воротах присутствует. По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором. Покрытие поля искусственная трава. Покрытие в хорошем состоянии, также присутствует разметка.\r\n2. Футбольное поле. Размеры поля 36х18, ворота стоят для минифутбола, сетка на воротах присутствует. По периметру стадион огорожен небольшим забором, поэтому при неточных ударах придётся походить. Покрытие поля искусственная трава. Покрытие в хорошем состоянии, также присутствует разметка.\r\n3. Волейбольно/баскетбольное поле. Размеры поля 24х12. По периметру площадка огорожена забором. На площадки весит воллейбольная сетка. Столбы высокие, на столбах присутствуют удобные крючки чтобы повесить сетку. Покрытие резина. Покрытие в хорошем состоянии, также присутствует вышка для судьи. Одно из баскетбольных колец сломано, поэтому поиграть в баскетбол получиться только на одно кольцо. Разметка на площадке присутствует, правда для волейбола она совсем бледная. \r\n4.Баскетбольное поле. Размеры поля 24х12, одно из колец поломоно, поэтому поиграть получиться только на одно кольцо. На кольце весит сетка. По периметру площадка огорожена забором.  Покрытие резина. Состояние покрытия хорошее, также присутствует вся необходимая для игры разметка.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:47:21.011Z",
+    "time_update": "2024-10-24T14:54:08.242Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 5,
+  "fields": {
+    "name": "Санаторий “Зелёный бор”",
+    "slug": "sanatorij-zelyonyij-bor",
+    "description": "На территории санатория находятся следующие спортивные площадки. Все площадки платные, но цена очень приемлимая, на сайте можно ознакомиться с прейскурантом цен.\r\n1. Корт для тенниса.  Размеры корта стандартные (~ 24x11). На столбах весит сетка. Покрытие корта искусственная трава, в хорошем состоянии (отсутствуют дыры). На площадке присутствует вся необходимая разметка. Корт огорожен забором.\r\n2. Две площадки для игры в воллейбол.  Размеры поля стандартные 18х9. На площадках весят сетки.  Покрытие искуственная трава,совсем не высокая. Площадка в хорошем состоянии, есть вся необходимая разметка.  Ограждение площадок отсутствует.\r\n3. Баскетбольное поле. Размеры поля 28х14, на кольцах весит сетка. По периметру площадка огорожена забором.  Покрытие искуственная трава,совсем не высокая. Состояние покрытия хорошее, также присутствует вся необходимая для игры разметка.\r\n4. Две площадки для футбола. Размеры полей 38х19, ворота стоят для минифутбола, сетка на воротах присутствует. По периметру площадки огорожены небольшим забором, за воротами забор высокий. Покрытие поля искусственная трава. Покрытие в хорошем состоянии, также присутствует разметка.\r\n5.Площадка для пляжного воллейбола. Размеры площадки стандартные 16х8. На площадке весит сетка, и есть необходимая разметка. Песок на площадке хороший. Без камней. Площадка огорожена забором.\r\n6. Три стола для настольного тенниса. На территории санатория в разных местах находятся несколько столов для настольного тенниса. Один из столов находится на стадионе под навесом. Покрытие стола металлическое, в хорошем состоянии. В качестве сетки стоит металлическая пластина.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:48:16.820Z",
+    "time_update": "2024-10-24T14:54:00.267Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      7,
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 6,
+  "fields": {
+    "name": "Пляж №1 Минское море",
+    "slug": "plyazh-1-minskoe-more",
+    "description": "На пляже есть следующие площадки:\r\n1. Восемь площадок для игры в пляжный воллейбол. На всех площадках стоят столбы с крючками под разную высоту сеток. В летнее время на одной из площадок весит сетка. Это место пользуется большой популярностью среди любителей пляжного воллейбола. В хорошую погоду прийти поиграть своей компанией будет достаточно сложно. Рядом с площадками есть металлический шкафчик, в котором хранятся сетки и разметка. Если хорошо попросить, то ребята ответственные за спорт инвентарь разрешат взять сетку и разметку. Но чаще всего на всех площадках уже всё весит и по несколько команд на влёт.\r\n2. Стол для настольного тенниса. Если идти со стороны дамбы к воллейбольным площадкам при выходе из леса с левой стороны рядом с площадкой для воркаута будет находится стол для настольного тенниса. Покрытие стола металлическое, в хорошем состоянии. Стоит металлическая сетка.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:49:10.478Z",
+    "time_update": "2024-10-24T14:53:51.143Z",
+    "author": 1,
+    "cat": [
+      7,
+      4
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 7,
+  "fields": {
+    "name": "школа №55 г. Минск",
+    "slug": "shkola-55-g-minsk",
+    "description": "На территории школы находятся 4 спортивные площадки:\r\n1. Футбольное поле. Размеры поля 80х50м, ворота большие, на воротах есть сетка. По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором, прямо за воротами 3 метровый забор. Покрытие поля искусственная трава, в хорошем состоянии. На поле присутствует необходимая разметка.\r\n2. Баскетбольное поле. Размеры поля 24х12м. По периметру площадка огорожена забором.  Покрытие резина. В некоторых местах покрытие залатано, но в целом в хорошем состоянии. Кольца стандартные, сетка на кольцах отсутствует.\r\n3.Волейбольное поле. Размеры поля 18х9м. Столбы высокие, на столбах присутствуют удобные крючки чтобы повесить сетку. Покрытие резина. Покрытие в хорошем состоянии, также присутствует вышка для судьи. На площадке присутствует разметка, правда, немного бледноватая.\r\n4. Корт для тенниса.  Размеры корта стандартные (~ 24x11). Стоят столбы, крючки на них частично выломаны, но при желании сетку повесить можно. Покрытие корта резина. в хорошем состоянии. На площадке присутствует вся необходимая разметка. Корт огорожен забором.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:50:14.136Z",
+    "time_update": "2024-10-24T14:54:53.747Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 8,
+  "fields": {
+    "name": "школа №54 г. Минска",
+    "slug": "shkola-54-g-minska",
+    "description": "На территории школы находятся 4 спортивные площадки:\r\n1. Футбольное поле. Размеры поля 80х30, ворота большие, сетка на воротах отсутствует. Площадка практически не огорожена (кое-где есть либо кусты, либо небольшой забор). Покрытие поля трава. Состояние покрытия хорошее.\r\n2.Футбольно/баскетбольное поле. Размеры поля 28х14, на кольцах и на воротах весит сетка. Ворота небольшие для минифутбола. Одно из колец частично прикрыто ветками ивы. По периметру площадка не огорожена, разметка отсутствует.  Покрытие твёрдый песок. \r\n3.Волейбольно/баскетбольное поле. Размеры поля 24х12м. На баскетбольных кольцах есть сетки, на столбах необходимые крючки для воллейбольной сетки. По периметру площадка не огорожена, разметка отсутствует.  Покрытие твёрдый песок.\r\n4. Хоккейная коробка.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:51:08.273Z",
+    "time_update": "2024-10-24T14:54:40.236Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 9,
+  "fields": {
+    "name": "школа №153 г. Минска",
+    "slug": "shkola-153-g-minska",
+    "description": "На территории школы находятся 3 спортивные площадки:\r\n1. Футбольное поле. Размеры поля 84х52, ворота большие, сетка на воротах отсутствует. Площадка практически не огорожена (есть ограждение школы). Покрытие поля трава. Состояние покрытия хорошее. Разметка на поле отсутствует.\r\n2.Футбольно/баскетбольное поле. Размеры поля ~32х18, на кольцах и на воротах сетка отсутствует. Ворота небольшие для минифутбола. По периметру площадка не огорожена, разметка отсутствует.  Покрытие твёрдый песок. \r\n3.Волейбольное поле. Размеры поля 30х13м. Столбы высокие, на столбах отсутствуют крючки. Весит сетка. Покрытие резина. Покрытие в хорошем состоянии. На площадке отсутствует разметка. Площадка огорожена по периметру забором.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:51:52.423Z",
+    "time_update": "2024-10-24T14:54:19.116Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 10,
+  "fields": {
+    "name": "школа №17 г. Минска",
+    "slug": "shkola-17-g-minska",
+    "description": "На территории школы находятся 6 спортивных площадок:\r\n1. Футбольное поле. Размеры поля 90х65, ворота большие, сетка на воротах отсутствует. Площадка практически не огорожена (есть небольшой забор по периметру школы). Покрытие поля трава. Состояние покрытия хорошее.\r\n2.Футбольно/баскетбольное поле. Размеры поля 28х14, на кольцах и на воротах сетка отсутствует. Одно из колец кривое. Ворота небольшие для минифутбола. По периметру площадка не огорожена, разметка отсутствует.  Покрытие резина, в хорошем состоянии. \r\n3.Волейбольное поле.  Стоят высокие столбы, с кольцами с возможностью повесить сетку на различную высоту. Площадка не огорожена. Покрытие бетон (местами есть куски оставшейся резины). Разметка отсутствует.\r\n4.Волейбольное поле.  Размеры поля 18х9м. Стоят высокие столбы, с кольцами с возможностью повесить сетку на различную высоту. Площадка не огорожена. Покрытие резина, местами не ровное, но в целом в хорошесм состоянии. Разметка присутствует.\r\n5. Теннисный корт. Когда-то здесь был теннисный корт. Покрытие резина с дырами и выбоинами. Разметка частично просматривается. По периметру раньше стоял забор, но сейчас от него остались только столбы.  \r\n6. Хоккейная коробка.",
+    "is_published": true,
+    "time_create": "2024-10-24T14:53:11.205Z",
+    "time_update": "2024-10-24T14:54:26.248Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 11,
+  "fields": {
+    "name": "Люцинская 23 г.Минск",
+    "slug": "lyutsinskaya-23-gminsk",
+    "description": "Во дворе есть следующие площадки: \r\n1. Баскетбольное поле. Размеры поля 25х15, сетка на кольцах отсутствует. Площадка огорожена.  Покрытие резина. Состояние покрытия хорошее. Разметка на площадке отсутствует. Одно из колец кривое.\r\n2. Два стола для настольного тенниса. Покрытие столов деревянное (фанера). Один стол в хорошем состоянии, на втором верхний слой уже стёрся, но в целом покрытие ровное. Сетка на столе отсутствует.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:24:22.117Z",
+    "time_update": "2024-11-05T20:24:55.378Z",
+    "author": 1,
+    "cat": [
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 12,
+  "fields": {
+    "name": "Люцинская 29, г. Минск",
+    "slug": "lyutsinskaya-29-g-minsk",
+    "description": "Во дворе есть следующие площадки: \r\n1. Волейбольное поле. Размеры поля 21х12, стоят столбы, максимальная высота скорее всего только под женскую сетку. Площадка огорожена. Покрытие резина, местами залатана и есть протёртости, но в целом в неплохом состоянии. Разметка почти стёрлась, только местами видна.\r\n2. Два стола для настольного тенниса. Покрытие столов деревянное (фанера). Один стол в хорошем состоянии, на втором верхний слой уже стёрся, но в целом покрытие ровное. Сетка на столе отсутствует.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:30:37.706Z",
+    "time_update": "2024-11-05T21:01:35.826Z",
+    "author": 1,
+    "cat": [
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 13,
+  "fields": {
+    "name": "школа №52 г. Минска",
+    "slug": "shkola-52-g-minska",
+    "description": "На территории школы находятся следующие спортивные площадки:\r\n1. Футбольное поле. Размеры поля 75х25 (но ворота стоят на расстоянии 50м друг от друга), ворота большие, сетка на воротах отсутствует.  По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором. Покрытие поля натуральный газон. По большей части покрытие стёрлось до земли. Разметка на поле отсутствует. \r\n2.Два баскетбольных поля. Размеры поля 25х13, сетка на кольцах отсутствует. Площадки огорожены общим забором.  Покрытие резина. Состояние покрытия хорошее, также присутствует вся необходимая для игры разметка. Щиты на кольцах маленькие.\r\n3. Два волейбольных поля. Размеры поля 18х9, стоят высокие столбы, с кольцами под стандартную высоту. Площадки огорожены общим забором. Покрытие резина, в хорошем состоянии. На площадке присутствует вся необходимая разметка. Так же на площадке есть вышка для судьи.\r\n4. Хоккейная коробка.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:36:00.853Z",
+    "time_update": "2024-11-05T21:01:29.215Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 14,
+  "fields": {
+    "name": "Налибокская 46, г. Минск",
+    "slug": "nalibokskaya-46-g-minsk",
+    "description": "Во дворе есть следующие площадки: \r\n1. Баскетбольно/волейбольное поле. Размеры поля 25х14, сетка на кольцах отсутствует. На столбах для волейбольной сетки присутствуют крючки под разную высоту. Площадка огорожена. Покрытие резина, местами есть дыры. Разметка отсутствует.\r\n2. Два стола для настольного тенниса. Покрытие столов деревянное (фанера). Верхнее покрытие на столах стёрлось, но в целом покрытие ровное. Сетка на столе отсутствует.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:40:43.888Z",
+    "time_update": "2024-11-05T21:01:13.700Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 15,
+  "fields": {
+    "name": "Каменногорская 90, г. Минск",
+    "slug": "kamennogorskaya-90-g-minsk",
+    "description": "Во дворе есть площадка для игры в волейбол.  Размеры поля 21х12, стоят столбы, с возможностью установки сетки на разную высоту. Площадка огорожена. Покрытие резина, в хорошем состоянии. Разметка присутствует, но очень бледная.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:44:29.692Z",
+    "time_update": "2024-11-05T21:00:44.827Z",
+    "author": 1,
+    "cat": [
+      3
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 16,
+  "fields": {
+    "name": "Каменногорская 96, г. Минск",
+    "slug": "kamennogorskaya-96-g-minsk",
+    "description": "Во дворе есть площадка для игры в волейбол.  Размеры поля 23х12, стоят столбы, с возможностью установки сетки на разную высоту. Площадка огорожена. Покрытие резина, местами протёрта до бетона. Разметка присутствует, но очень бледная.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:47:54.081Z",
+    "time_update": "2024-11-05T21:00:53.640Z",
+    "author": 1,
+    "cat": [
+      3
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 17,
+  "fields": {
+    "name": "Каменногорская 104, г. Минск",
+    "slug": "kamennogorskaya-104-g-minsk",
+    "description": "Во дворе есть следующие площадки: \r\n1. Футбольно/баскетбольное поле. Размеры поля 26х15, стоят ворота для минифутбола. На одном из колец есть сетка. Площадка огорожена. Покрытие резина, местами залатана, но в целом в неплохом состоянии. Разметка присутствует, но бледная.\r\n2. Два стола для настольного тенниса. Покрытие столов деревянное (фанера). Верхнее покрытие на столах стёрлось, но в целом покрытие ровное. Есть сетка в виде деревянной доски.",
+    "is_published": true,
+    "time_create": "2024-11-05T20:52:40.595Z",
+    "time_update": "2024-11-05T21:00:36.923Z",
+    "author": 1,
+    "cat": [
+      2,
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground",
+  "pk": 18,
+  "fields": {
+    "name": "школа №56 г. Минска",
+    "slug": "shkola-56-g-minska",
+    "description": "На территории школы находятся следующие спортивные площадки:\r\n1. Футбольное поле. Размеры поля 60х26, ворота большие, сетка на воротах отсутствует.  По периметру стадион  огорожен (это включая беговые дорожки) небольшим забором. Покрытие поля резина, местами есть дыры. Разметка на поле присутствует.  \r\n 2.Два баскетбольных поля. Размеры поля 25х15, сетка на кольцах отсутствует. Площадки огорожены общим забором.  На одной площадке покрытие резина, на второй асфальт. На площадке с резиновым покрытием присутствует вся необходимая для игры разметка. Щиты на кольцах маленькие.\r\n3. Два волейбольных поля. Размеры поля 18х9, стоят высокие столбы, с кольцами под стандартную высоту. Площадки огорожены общим забором. Покрытие резина, в хорошем состоянии. На одной из площадок покрытие местами стёрто. На площадке присутствует вся необходимая разметка. \r\n4. Хоккейная коробка.",
+    "is_published": false,
+    "time_create": "2024-11-05T21:00:14.750Z",
+    "time_update": "2024-11-05T21:00:14.757Z",
+    "author": 1,
+    "cat": [
+      2,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 1,
+  "fields": {
+    "playground": 1,
+    "category": 1
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 2,
+  "fields": {
+    "playground": 1,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 3,
+  "fields": {
+    "playground": 1,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 4,
+  "fields": {
+    "playground": 1,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 5,
+  "fields": {
+    "playground": 2,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 6,
+  "fields": {
+    "playground": 2,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 7,
+  "fields": {
+    "playground": 2,
+    "category": 5
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 8,
+  "fields": {
+    "playground": 2,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 9,
+  "fields": {
+    "playground": 3,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 10,
+  "fields": {
+    "playground": 4,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 11,
+  "fields": {
+    "playground": 4,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 12,
+  "fields": {
+    "playground": 4,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 13,
+  "fields": {
+    "playground": 5,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 14,
+  "fields": {
+    "playground": 5,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 15,
+  "fields": {
+    "playground": 5,
+    "category": 4
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 16,
+  "fields": {
+    "playground": 5,
+    "category": 5
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 17,
+  "fields": {
+    "playground": 5,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 18,
+  "fields": {
+    "playground": 5,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 19,
+  "fields": {
+    "playground": 6,
+    "category": 4
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 20,
+  "fields": {
+    "playground": 6,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 21,
+  "fields": {
+    "playground": 7,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 22,
+  "fields": {
+    "playground": 7,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 23,
+  "fields": {
+    "playground": 7,
+    "category": 5
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 24,
+  "fields": {
+    "playground": 7,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 25,
+  "fields": {
+    "playground": 8,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 26,
+  "fields": {
+    "playground": 8,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 27,
+  "fields": {
+    "playground": 8,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 28,
+  "fields": {
+    "playground": 9,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 29,
+  "fields": {
+    "playground": 9,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 30,
+  "fields": {
+    "playground": 9,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 31,
+  "fields": {
+    "playground": 10,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 32,
+  "fields": {
+    "playground": 10,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 33,
+  "fields": {
+    "playground": 10,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 34,
+  "fields": {
+    "playground": 11,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 35,
+  "fields": {
+    "playground": 11,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 36,
+  "fields": {
+    "playground": 12,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 37,
+  "fields": {
+    "playground": 12,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 38,
+  "fields": {
+    "playground": 13,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 39,
+  "fields": {
+    "playground": 13,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 40,
+  "fields": {
+    "playground": 13,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 41,
+  "fields": {
+    "playground": 14,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 42,
+  "fields": {
+    "playground": 14,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 43,
+  "fields": {
+    "playground": 14,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 44,
+  "fields": {
+    "playground": 15,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 45,
+  "fields": {
+    "playground": 16,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 46,
+  "fields": {
+    "playground": 17,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 47,
+  "fields": {
+    "playground": 17,
+    "category": 6
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 48,
+  "fields": {
+    "playground": 17,
+    "category": 7
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 49,
+  "fields": {
+    "playground": 18,
+    "category": 2
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 50,
+  "fields": {
+    "playground": 18,
+    "category": 3
+  }
+},
+{
+  "model": "SportsGrounds.playground_cat",
+  "pk": 51,
+  "fields": {
+    "playground": 18,
+    "category": 6
+  }
+}
+]
