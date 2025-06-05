@@ -24,6 +24,11 @@
 				  <a class="nav-link" href="{% url n.url_name %}">{{n.name}}</a>
 				</li>
 			  {% endfor %}
+			  {% if user.is_authenticated and user.is_staff %}
+			  	<li class="nav-item">
+				  <a class="nav-link" href="{% url 'API' %}">API (only staff)</a>
+				</li>
+			  {% endif %}
 				  <ul class="login-logout">
 					{% if user.is_authenticated %}
 					  <li class="login-logout-form"><a href="{% url 'user:profile' %}">{{user.username}}</a>|

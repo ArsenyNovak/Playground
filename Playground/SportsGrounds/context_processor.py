@@ -4,6 +4,7 @@ navigation = [{'name': "Главная страница", 'url_name': 'home'},
               {'name': "Все площадки", 'url_name': 'all_playgrounds'},
               {'name': "Добавить площадку", 'url_name': 'add_playground'},
               {'name': "Обратная связь", 'url_name': 'contact'},
+
              ]
 
 def get_navigation(request):

@@ -8,6 +8,7 @@ urlpatterns = [
     path('add_playground/', views.AddPlayGrounds.as_view(), name='add_playground'),
     path('category/<slug:cat_slug>/', views.ShowCategory.as_view(), name='category'),
     path('sport_ground/<slug:sportground_slug>/', views.ShowSportGround.as_view(), name='sport_ground'),
+    path('API/', views.APIList.as_view(), name='API'),
     path('api/playgrounds/<slug:cat_slug>/', views.PlayGroundsApi.as_view(), name='api_playgrounds_list'),
     path('api/category_list/', views.CategoryApiList.as_view(), name='api_category_list'),
     path('api/playgrounds_detail/<slug:sportground_slug>/', views.PlaygroundsApiDetail.as_view(), name='api_playgrounds_detail'),

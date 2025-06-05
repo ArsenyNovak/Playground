@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+<p class="about_page_text">
+  1. Список всех категорий (GET):<br>
+  <span class="color_link_url">https://{{ host }}{% url 'api_category_list' %}</span><br>
+  <br>
+  2. Список площадок по категориям (GET): <br>
+  <span class="color_link_url">https://{{ host }}{% url 'api_playgrounds_list' 'slug-category' %}</span> <br>
+  *вместо 'slug-category' должен быть слаг категории, например - 'badminton' <br>
+  или может быть 'all'- для отображения списка всех площадок. <br>
+  <br>
+  3. Отображение площадки по слагу (GET):<br>
+  <span class="color_link_url">https://{{ host }}{% url 'api_playgrounds_detail' 'slug-sportgrounds' %}</span> <br>
+  *вместо 'slug-sportgrounds' должен быть слаг площадки, например - 'shkola-1-dkopische'<br>
+  <br>
+  4. Авторизация пользователя (POST): <br>
+   <span class="color_link_url">https://{{ host }}/api/auth/token/login/</span> <br>
+  * отправлять нужно: 'username' и 'password'. <br>
+  <br>
+  5. Выход из профиля (POST): <br>
+  <span class="color_link_url">https://{{ host }}/api/auth/token/logout/</span> <br>
+  * в заголовках нужно указать 'Authorization' и значение токена.
+  <br>
+  6.
+
+</p>
+</div>
+{% endblock %}

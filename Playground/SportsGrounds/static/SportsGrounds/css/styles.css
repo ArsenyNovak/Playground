@@ -196,3 +196,9 @@ ul {
   color: rgba(255, 255, 255, 0.55);
   border: 1px solid black;
 }
+
+/* classes use in API.html template */
+
+.color_link_url {
+    color: rgba(22, 87, 245, 0.8);
+}
