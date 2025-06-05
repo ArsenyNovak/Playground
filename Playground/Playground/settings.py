@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'User.apps.UserConfig',
     'Feedback.apps.FeedbackConfig',
     'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 
 ]
 
@@ -165,4 +167,12 @@ RECIPIENTS_EMAIL = os.getenv("RECIPIENTS_EMAIL").split(' ')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+}
 

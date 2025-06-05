@@ -1,4 +1,4 @@
 .env
-db.dqlite3
+db.sqlite3
 Plan.txt
 .idea

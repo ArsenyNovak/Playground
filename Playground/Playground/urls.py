@@ -17,15 +17,15 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
-
-
+from django.urls import path, include, re_path
 
 urlpatterns = [
     path('', include('SportsGrounds.urls')),
     path('', include('User.urls', namespace='user')),
     path('', include('Feedback.urls')),
     path('admin/', admin.site.urls),
+    path('api/auth/', include('djoser.urls')),
+    path('api/auth/', include('djoser.urls.authtoken')),
 
 ]
 
